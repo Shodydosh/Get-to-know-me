@@ -1,0 +1,142 @@
+
+.header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    font-size: var(--h2-font-size);
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+
+    &__logo, &__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+    &__list {
+        display: flex;
+        column-gap: 2rem;
+    }
+    &__link{
+        // link buttons
+        display: flex;
+        flex-direction: column; // flex theo chieu doc
+        align-items: center;
+        font-size: var(--normal-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+        transition: 0.3s;
+    }
+    &__icon,
+    &__close,
+    &__toggle {
+        // hidden by default
+        display: none;
+    }
+    
+    &__toggle:hover {
+        cursor: pointer;
+    }
+    &__link:hover {
+        transform: scale(1.1);
+        color: var(--title-color-dark);
+    }
+
+}
+
+// Active
+.active-link {
+    color: var(--title-color-dark);
+}
+
+//*   =============================
+//! ========== BREAKPOINTS ==========
+//*   =============================
+
+//* Small devices
+@media screen and (max-width: 350px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+//* Medium devices
+@media screen and (max-width: 768px) {
+
+    .header {
+        top: initial;
+        bottom: 0;
+    }
+
+    .nav {
+        height: var(--header-height);
+        &__menu {
+            // margin-left: var(--mb-1-5); //1,5 rem
+            // margin-right: var(--mb-1-5); //1,5 rem
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 2rem 1.5rem 4rem;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.20);
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: .6s ease;
+            z-index: var(--z-fixed);
+        }
+
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        &__icon {
+            font-size: 1.3rem;
+        }
+
+        &__close,
+        &__toggle {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 0.8rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--title-color);
+        }
+
+        &__icon,
+        &__toggle,
+        &__close {
+            display: block;
+        }
+        &__logo {
+            display: none;
+        }
+    }
+}
+
+//* SHOW MENU
+.show-menu {
+    bottom: 0;
+}
+
+//* Small devices
+@media screen and (max-width: 350px) {
+    .nav {
+        &__menu{
+            padding: 2rem 0.25rem 4rem;
+        }
+    }
+}
+
