@@ -4,7 +4,7 @@ import "../assets/scss/header.scss";
 const Header = () => {
   // managing state showing the menu
   // initial status of menu is bottom: -100%
-  const [Toggle, showMenu] = useState(false);
+  const [Toggle, showMenu] = useState(true);
 
   return (
     <header className="header">
