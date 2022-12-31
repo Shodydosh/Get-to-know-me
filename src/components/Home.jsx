@@ -1,6 +1,8 @@
 import React from "react";
 import Social from "./Social";
 import Data from "./Data";
+import ScrollDown from "./ScrollDown";
+import "../helpers/vanillaTilt.js";
 import "../assets/scss/home.scss";
 
 const Home = () => {
@@ -11,10 +13,13 @@ const Home = () => {
           {/* contains social links */}
           <Social />
 
-          <div className="home__img"></div>
+          <div className="home__img-container">
+            <div className="home__img"></div>
+          </div>
 
           <Data />
         </div>
+        <ScrollDown />
       </div>
     </section>
   );
