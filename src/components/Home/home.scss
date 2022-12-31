@@ -5,7 +5,7 @@
     }
     &__content {
         // grid-template-columns: 56px repeat(2, 1fr);
-        grid-template-columns: 56px 1fr 300px;
+        grid-template-columns: 56px 1fr 1fr;
 
         // khai báo 1 grid 3 cột với cột đầu có chiều rộng 116px
         // 2 cột còn lại có kích thước 1fr
@@ -26,7 +26,7 @@
         }
     }
     &__title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin-bottom: var(--mb-0-25);
     }
     &__subtitle {
@@ -55,13 +55,8 @@
         display: inline-flex;
         align-items: center;
     }
-    &__hand {
-        width: 38px;
-        height: 38px;
-        margin-left: 0.4rem;
-    }
     &__img {
-        background: url(../images/profile.png);
+        background: url(../../assets/images/profile.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -100,12 +95,6 @@
     .wheel {
         animation: scroll 2s ease infinite;
     }
-    .button{
-        background-color: rgb(0, 0, 0);
-        &__icon {
-            font-size: var(--small-font-size);
-        }
-    }
 }
 
 @keyframes scroll {
@@ -135,7 +124,33 @@
 //! ========== BREAKPOINTS ==========
 //*   =============================
 
-//* Medium devices
+//! Semi-large devices
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    .home {
+        &__title {
+            font-size: 2rem;
+        }
+        &__subtitle {
+            position: relative;
+            font-size: var(--h3-font-size);
+            opacity: 0.8;
+            padding-left: 4.4rem;
+            font-weight: var(--font-normal);
+            margin-bottom: var(--mb-1);
+            &::before{
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                background-color: rgb(0, 0, 0);
+                left: 0;
+                top: 1rem
+            }
+        }
+    }
+}
+
+//! Medium devices
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .section {
         padding: 2rem 0 4rem;
@@ -153,10 +168,6 @@
         &__title {
             font-size: 2rem;
         }
-        &__hand {
-            width: 30px;
-            height: 30px;
-        }
         &__data {
             padding-left: 9.5rem;
             grid-column: 1/3; // width 100%
@@ -167,8 +178,7 @@
     }
 }
 
-
-//* Small devices
+//! Small devices
 @media screen and (max-width: 576px) {
     
     .container {
@@ -217,10 +227,6 @@
         &__title {
             font-size: 1.5rem;
             margin-bottom: var(--mb-0-25);
-        }
-        &__hand {
-            width: 24px;
-            height: 24px;
         }
         &__subtitle {
             position: relative;

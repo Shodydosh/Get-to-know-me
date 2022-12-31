@@ -2,8 +2,8 @@ import React from "react";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-import "../helpers/vanillaTilt.js";
-import "../assets/scss/home.scss";
+import "../../helpers/vanillaTilt.js";
+import "./home.scss";
 
 const Home = () => {
   return (
