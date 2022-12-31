@@ -13,13 +13,9 @@ const Home = () => {
           {/* contains social links */}
           <Social />
 
-          <div
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.3"
-            data-tilt-reverse="true"
-            className="home__img"
-          ></div>
+          <div className="home__img-container">
+            <div className="home__img"></div>
+          </div>
 
           <Data />
         </div>
