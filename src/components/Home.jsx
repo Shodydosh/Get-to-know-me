@@ -1,6 +1,8 @@
 import React from "react";
 import Social from "./Social";
 import Data from "./Data";
+import ScrollDown from "./ScrollDown";
+import "../helpers/vanillaTilt.js";
 import "../assets/scss/home.scss";
 
 const Home = () => {
@@ -11,10 +13,17 @@ const Home = () => {
           {/* contains social links */}
           <Social />
 
-          <div className="home__img"></div>
+          <div
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.3"
+            data-tilt-reverse="true"
+            className="home__img"
+          ></div>
 
           <Data />
         </div>
+        <ScrollDown />
       </div>
     </section>
   );

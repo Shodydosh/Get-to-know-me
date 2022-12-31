@@ -60,18 +60,11 @@
 //! ========== BREAKPOINTS ==========
 //*   =============================
 
-//* Small devices
-@media screen and (max-width: 350px) {
-    
-}
-
-@media screen and (max-width: 576px) {
-    
-}
-
 //* Medium devices
 @media screen and (max-width: 768px) {
-
+    .section {
+        padding: 2rem 0 4rem;
+    }
     .header {
         top: initial;
         bottom: 0;
@@ -93,8 +86,8 @@
             transition: .6s ease;
             z-index: var(--z-fixed);
         }
-
-
+        
+        
         &__list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -104,7 +97,7 @@
         &__icon {
             font-size: 1.3rem;
         }
-
+        
         &__close,
         &__toggle {
             position: absolute;
@@ -114,7 +107,7 @@
             cursor: pointer;
             color: var(--title-color);
         }
-
+        
         &__icon,
         &__toggle,
         &__close {
@@ -133,10 +126,12 @@
 
 //* Small devices
 @media screen and (max-width: 350px) {
-    .nav {
-        &__menu{
-            padding: 2rem 0.25rem 4rem;
-        }
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
     }
 }
 
+@media screen and (max-width: 576px) {
+    
+}

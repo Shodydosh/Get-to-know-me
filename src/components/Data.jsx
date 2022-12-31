@@ -61,7 +61,7 @@ const Data = () => {
         An organized, detail-oriented student who is very passionate about
         technology
       </p>
-      <a href="#contact" className="button button--flex">
+      <a href="#contact" className="home__button button button--flex">
         Say hello
         <svg
           class="button__icon"
