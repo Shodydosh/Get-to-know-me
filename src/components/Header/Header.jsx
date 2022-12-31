@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/scss/header.scss";
+import "./header.scss";
 
 const Header = () => {
   // managing state showing the menu
