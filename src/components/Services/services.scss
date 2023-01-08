@@ -110,13 +110,22 @@
             align-items: center;    
             opacity: 0.8;
             display: flex;
-            column-gap: .5rem;
+            column-gap: .8rem;
+        }
+        &-info {
+            font-size: .8rem;
         }
         &-icon {
             opacity: 0.8;
             font-size: 1rem;
         }
     }
+}
+
+.outside-modal {
+    background-color: red;
+    position: fixed;
+    z-index: 1000;
 }
 
 .active-modal {
