@@ -32,19 +32,22 @@
         color: rgba(0, 0, 0);
     }
 
-    &__sections {
+    &__section {
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
+        height: 500px;
     }
 
     &__content {
         &-inactive {
             display: none;
+            animation: fadeOut .5s;
         }
             
         &-active {
             display: block;
+            animation: fadeIn 1.5s;
         }
     }
 
@@ -74,14 +77,86 @@
         display: inline-block;
         width: 13px;
         height: 13px;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgb(60, 60, 60);
         border-radius: 50%;
     }
     &__line {
         display: block;
         width: 1px;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgb(60, 60, 60);
         transform: translate(6px, -7px);
     }
 }
+
+//*   =============================
+//! =========== KEYFRAMES ===========
+//*   =============================
+
+// FULL SCREEN FADE 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+//*   =============================
+//! ========== BREAKPOINTS ==========
+//*   =============================
+
+//* Large devices
+@media screen and (max-width: 992px) {
+    .qualification {
+        &__container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+//* Semi-large devices
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 0 var(--header-height) 0;
+    }
+
+    .qualification__section {
+        grid-template-columns: 0.75fr;
+        padding: 2rem 0 4rem;
+        &__subtitle {
+            margin-bottom: var(--mb-3);
+        }
+    }
+}
+
+//* Medium devices
+@media screen and (max-width: 576px){
+    .qualification__section {
+        grid-template-columns: 1fr;
+
+        padding: 2rem 1rem 4rem;
+        &__subtitle {
+            margin-bottom: var(--mb-3);
+        }
+    }
+}
+
+//* Small devices
+@media screen and (max-width: 350px) {
+    .qualification__data {
+        gap: 0.5rem;
+    }
+}
+

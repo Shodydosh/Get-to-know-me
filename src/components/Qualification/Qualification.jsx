@@ -10,7 +10,7 @@ const Qualification = () => {
   };
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
@@ -41,7 +41,7 @@ const Qualification = () => {
           </div>
         </div>
 
-        <div className="qualification__sections">
+        <div className="qualification__section">
           <div
             className={
               QualificationState === 0
@@ -51,7 +51,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">EXXXXXXXXXX</h3>
+                <h3 className="qualification__title">Information Technology</h3>
                 <span className="qualification__subtitle">
                   Posts and Telecommunications Institute of Technology - VietNam
                 </span>
@@ -76,28 +76,26 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">
-                  Information Technology2
-                </h3>
+                <h3 className="qualification__title">Majoring in Math</h3>
                 <span className="qualification__subtitle">
-                  Posts and Telecommunications Institute of Technology - VietNam
+                  Vo Nguyen Giap Gifted High School - VietNam
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  2021 - Present
+                  2018 - 2021
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">UIUX</h3>
+                <h3 className="qualification__title">Honors Program</h3>
                 <span className="qualification__subtitle">
-                  Posts and Telecommunications Institute of Technology - VietNam
+                  Dong My Secondary School
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  2021 - Present
+                  2013 - 2018
                 </div>
               </div>
 
@@ -108,7 +106,10 @@ const Qualification = () => {
             </div>
           </div>
 
-          {/* asd */}
+          {/* EXPERIENCE */}
+          {/* EXPERIENCE */}
+          {/* EXPERIENCE */}
+
           <div
             className={
               QualificationState === 1
@@ -118,11 +119,9 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Information Technology1
-                </h3>
+                <h3 className="qualification__title">TodoApp</h3>
                 <span className="qualification__subtitle">
-                  Posts and Telecommunications Institute of Technology - VietNam
+                  Personal Project
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
@@ -145,11 +144,9 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">
-                  Information Technology2
-                </h3>
+                <h3 className="qualification__title">TodoApp</h3>
                 <span className="qualification__subtitle">
-                  Posts and Telecommunications Institute of Technology - VietNam
+                  Personal Project
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
@@ -160,11 +157,9 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Information Technology3
-                </h3>
+                <h3 className="qualification__title">TodoApp</h3>
                 <span className="qualification__subtitle">
-                  Posts and Telecommunications Institute of Technology - VietNam
+                  Personal Project
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
