@@ -1,0 +1,63 @@
+.contact {
+    &__container {
+        grid-template-columns: repeat(2, max-content);
+        //The max-content sizing keyword represents the intrinsic maximum width or height of the content. 
+        //For text content this means that the content will not wrap at all even if it causes overflows.
+        justify-content: center; // horizontal alignment
+        column-gap: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    &__title {
+        text-align: center; // horizontal text alignment
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    &__info {
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 300px;
+    }
+
+    &__card {
+        background-color: var(--container-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        border-radius: 0.75rem;
+        text-align: center;
+
+        &-icon {
+            font-size: 2rem;
+            color: var(--title-color);
+            margin-bottom: var(--mb-0-25);
+        }
+        &-title {
+            font-weight: var(--font-medium);
+        }
+        &-data {
+            color: var(--text-color);
+            display: block;
+        }
+    }
+
+    &__button {
+        color: var(--text-color);
+        font-size: var(--small-font-size);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.25rem;
+
+        &-icon {
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+    }
+
+
+
+    &__form {
+        width: 380px;
+    }
+}
