@@ -67,7 +67,6 @@
         padding: 2rem 0 4rem;
     }
     .header {
-        box-shadow: initial;
         top: initial;
         bottom: 0;
     }
@@ -104,7 +103,7 @@
         &__toggle {
             position: absolute;
             right: 1.5rem;
-            bottom: 0.8rem;
+            bottom: 0.4rem;
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--title-color);
@@ -114,9 +113,6 @@
         &__toggle,
         &__close {
             display: block;
-        }
-        &__logo {
-            display: none;
         }
     }
 }
