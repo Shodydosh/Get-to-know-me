@@ -1,27 +1,46 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    console.log("sending");
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_xd812b8",
+      "template_ac03qtq",
+      form.current,
+      "KpXm-cDIBPYTWYf_s"
+    );
+
+    e.target.reset();
+  };
+
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact me</span>
+      <h2 className="section__title">Contact</h2>
+      <span className="section__subtitle">Connect with Me</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">Social</h3>
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="bx bxl-facebook contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
-                nguyenminhtung252@gmail.com
-              </span>
+              <h3 className="contact__card-title">Facebook</h3>
 
-              <a href="#contact " className="contact__button">
-                Write me{" "}
+              <a
+                href="https://www.facebook.com/shodydosh/"
+                className="contact__button"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -30,7 +49,6 @@ const Contact = () => {
               <i className="bx bxl-linkedin contact__card-icon"></i>
 
               <h3 className="contact__card-title">LinkedIn</h3>
-              <span className="contact__card-data">Connect me</span>
 
               <a
                 href="https://www.linkedin.com/in/tungnguyen252/"
@@ -47,7 +65,6 @@ const Contact = () => {
               <i className="bx bxl-github contact__card-icon"></i>
 
               <h3 className="contact__card-title">Github</h3>
-              <span className="contact__card-data">Connect me</span>
 
               <a
                 href="https://github.com/Shodydosh"
@@ -64,7 +81,12 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Send me a email</h3>
 
-          <form action="" className="contact__form">
+          <form
+            action=""
+            className="contact__form"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
@@ -85,7 +107,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact__form-div">
+            <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Project</label>
               <textarea
                 name="project"
@@ -97,7 +119,10 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="home__button button button--flex">
+            <button
+              type="submit"
+              className="home__button button button--flex contact__button"
+            >
               Send
               <svg
                 className="button__icon"
