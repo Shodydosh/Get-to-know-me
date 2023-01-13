@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo active-link">
+        <a href="#home" className="nav__logo active-link">
           TUNG
         </a>
 
