@@ -7,11 +7,14 @@ import Skills from "./components/Skills/Skills";
 import Services from "./components/Services/Services";
 import Qualification from "./components/Qualification/Qualification";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 const App = () => {
   return (
     <>
       <Header />
+
       <main className="main">
         <Home />
         <About />
@@ -20,6 +23,9 @@ const App = () => {
         <Qualification />
         <Contact />
       </main>
+
+      <Footer />
+      <ScrollUp />
     </>
   );
 };
