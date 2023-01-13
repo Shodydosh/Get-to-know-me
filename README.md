@@ -5,3 +5,7 @@
 - The website can be designed to reflect one's personal style and can be customized to suit the individual's needs. 
 - Having a portfolio website can help to establish oneself as a professional in one's field, and can serve as a valuable resource for building a network and finding new opportunities.
 
+# Deployment
+
+## https://get-to-know-me.vercel.app/
+
