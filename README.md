@@ -1,16 +1,8 @@
 <div>
 <img align="left" src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 40px height=40px>
-<h1 align="center"> Porfolio Website </h1>
+<h1 align="center"> Portfolio website </h1>
 </div>
-
-- A portfolio website is a platform that allows individuals to showcase their work, skills, and experience to potential employers, clients, or customers. It is a powerful tool for building a personal brand and promoting oneself in today's digital world. 
-
-- A portfolio website can include a wide range of information such as one's resume, professional achievements, testimonials, and a selection of work samples. It can also include a blog or a section for writing about one's experiences and thoughts. 
-
-- The website can be designed to reflect one's personal style and can be customized to suit the individual's needs. 
-
-- Having a portfolio website can help to establish oneself as a professional in one's field, and can serve as a valuable resource for building a network and finding new opportunities.
-
+<h3>The website features a modern and minimalist design, with a focus on clean typography, clear navigation, and visually engaging content. The website is fully responsive, ensuring that it looks great and functions well on a variety of devices and browsers.</h3>
 </br>
 
 <div>
